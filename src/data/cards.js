@@ -41,7 +41,7 @@ export const cardPool = [
   {
     id: 1,
     name: "Hinata",
-    image: "/cards/hinata.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/hinata.jpeg`,
     type: CARD_TYPES.SUB_DPS,
     maxHp: 110,
     hp: 110,
@@ -61,7 +61,7 @@ export const cardPool = [
   {
     id: 2,
     name: "Sakura",
-    image: "/cards/sakura.jpeg", 
+    image: `${import.meta.env.BASE_URL}cards/sakura.jpeg`,
     type: CARD_TYPES.HEALER,
     maxHp: 130,
     hp: 130,
@@ -81,7 +81,7 @@ export const cardPool = [
   {
     id: 3,
     name: "Zani",
-    image: "/cards/zani.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/zani.jpeg`,
     type: CARD_TYPES.DPS,
     maxHp: 95,
     hp: 95,
@@ -101,7 +101,7 @@ export const cardPool = [
   {
     id: 4,
     name: "Shorekeeper", 
-    image: "/cards/shorekeeper.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/shorekeeper.jpeg`,
     type: CARD_TYPES.HEALER,
     maxHp: 100,
     hp: 100,
@@ -121,7 +121,7 @@ export const cardPool = [
   {
     id: 5,
     name: "Kurumi",
-    image: "/cards/kurumi.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/kurumi.jpeg`,
     type: CARD_TYPES.DPS,
     maxHp: 140,
     hp: 140,
@@ -141,7 +141,7 @@ export const cardPool = [
   {
     id: 6,
     name: "Madoka Yuzuhara",
-    image: "/cards/madoka.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/madoka.jpeg`,
     type: CARD_TYPES.BUFFER_DEBUFFER,
     maxHp: 100,
     hp: 100,
@@ -161,7 +161,7 @@ export const cardPool = [
   {
     id: 7,
     name: "Reze",
-    image: "/cards/reze.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/reze.jpeg`,
     type: CARD_TYPES.SUB_DPS,
     maxHp: 115,
     hp: 115,
@@ -181,7 +181,7 @@ export const cardPool = [
   {
     id: 8,
     name: "March 7th",
-    image: "/cards/march.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/march.jpeg`,
     type: CARD_TYPES.BUFFER_DEBUFFER,
     maxHp: 90,
     hp: 90,
@@ -201,7 +201,7 @@ export const cardPool = [
   {
     id: 9,
     name: "Waguri Kaoruko",
-    image: "/cards/waguri.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/waguri.jpeg`,
     type: CARD_TYPES.BUFFER_DEBUFFER,
     maxHp: 95,
     hp: 95,
@@ -221,7 +221,7 @@ export const cardPool = [
   {
     id: 10,
     name: "Hu Tao",
-    image: "/cards/hu tao.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/hu tao.jpeg`,
     type: CARD_TYPES.DPS,
     maxHp: 80,
     hp: 80,
@@ -241,7 +241,7 @@ export const cardPool = [
   {
     id: 11,
     name: "Ryou Yamada",
-    image: "/cards/ryo.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/ryo.jpeg`,
     type: CARD_TYPES.SUB_DPS,
     maxHp: 80,
     hp: 80,
@@ -261,7 +261,7 @@ export const cardPool = [
   {
     id: 12,
     name: "Bocchi Hitori",
-    image: "/cards/bocchi.jpeg",
+    image: `${import.meta.env.BASE_URL}cards/bocchi.jpeg`,
     type: CARD_TYPES.DPS,
     maxHp: 90,
     hp: 90,
@@ -281,7 +281,7 @@ export const cardPool = [
   {
     id: 13,
     name: "Beth",
-    image: "/cards/beth.jpg",
+    image: `${import.meta.env.BASE_URL}cards/beth.jpg`,
     type: CARD_TYPES.DPS,
     maxHp: 85,
     hp: 85,
