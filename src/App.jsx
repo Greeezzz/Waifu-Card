@@ -645,7 +645,7 @@ function App() {
       {/* Teams Layout - Responsive & Deck Design */}
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6">
         {/* Player Deck */}
-        <div className="flex-1 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-md rounded-2xl border border-blue-400/30 p-2 sm:p-4 shadow-2xl">
+        <div className="flex-1 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-md rounded-2xl border border-blue-400/30 p-2 xs:p-3 sm:p-4 shadow-2xl">
           <div className="flex items-center justify-center gap-3 mb-2 sm:mb-4">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <span className="text-white font-bold">👤</span>
@@ -655,7 +655,7 @@ function App() {
               {BattleSystem.getAliveCards(playerTeam).length}/{playerTeam.length} alive
             </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
             {playerTeam.map((card, i) => (
               <Card
                 key={card.id}
@@ -670,7 +670,7 @@ function App() {
           </div>
         </div>
         {/* Karbit Deck */}
-        <div className="flex-1 bg-gradient-to-br from-red-500/20 to-pink-500/20 backdrop-blur-md rounded-2xl border border-red-400/30 p-2 sm:p-4 shadow-2xl">
+        <div className="flex-1 bg-gradient-to-br from-red-500/20 to-pink-500/20 backdrop-blur-md rounded-2xl border border-red-400/30 p-2 xs:p-3 sm:p-4 shadow-2xl">
           <div className="flex items-center justify-center gap-3 mb-2 sm:mb-4">
             <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
               <span className="text-white font-bold">🤖</span>
@@ -680,7 +680,7 @@ function App() {
               {BattleSystem.getAliveCards(karbitTeam).length}/{karbitTeam.length} alive
             </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
             {karbitTeam.map((card, i) => (
               <Card
                 key={card.id}
