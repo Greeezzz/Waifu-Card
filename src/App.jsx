@@ -655,7 +655,7 @@ function App() {
               {BattleSystem.getAliveCards(playerTeam).length}/{playerTeam.length} alive
             </div>
           </div>
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
+          <div className="grid grid-cols-3 gap-2 sm:gap-3">
             {playerTeam.map((card, i) => (
               <Card
                 key={card.id}
@@ -665,6 +665,8 @@ function App() {
                 isClickable={turn === "player" && card.hp > 0 && !card.isStunned}
                 showActions={selectedCard === card && gamePhase === "action"}
                 onAction={handleAction}
+                // Card size tweaks for mobile
+                className="max-w-[90px] sm:max-w-[110px] md:max-w-[120px]"
               />
             ))}
           </div>
@@ -680,7 +682,7 @@ function App() {
               {BattleSystem.getAliveCards(karbitTeam).length}/{karbitTeam.length} alive
             </div>
           </div>
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
+          <div className="grid grid-cols-3 gap-2 sm:gap-3">
             {karbitTeam.map((card, i) => (
               <Card
                 key={card.id}
@@ -688,6 +690,8 @@ function App() {
                 isSelected={targetCard === card}
                 onSelect={handleCardSelect}
                 isClickable={gamePhase === "target"}
+                // Card size tweaks for mobile
+                className="max-w-[90px] sm:max-w-[110px] md:max-w-[120px]"
               />
             ))}
           </div>
